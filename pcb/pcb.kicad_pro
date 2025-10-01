@@ -59,24 +59,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "starved_thermal|168558845|107860324|24e072ba-2ad4-4562-ac54-473ae8a62286|d8f64d20-8036-4846-8f10-efb952d8d3bc|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|168558846|107860323|24e072ba-2ad4-4562-ac54-473ae8a62286|499a1226-bae4-4567-9279-980dd7a9d5c1|F.Cu",
-          ""
-        ],
-        [
-          "unconnected_items|160500000|103000000|F.Cu|4|6f0c96c2-ed1a-4159-974e-960759b689cd|164b9183-b25b-476c-aecd-2ac6942b9772",
-          ""
-        ],
-        [
-          "unconnected_items|160500000|103000000|F.Cu|4|9502471f-521e-4d90-a2bc-37851e9bc565|6ab58697-fd1d-4e7f-bdf8-d8dfa855376c",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -99,7 +82,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
-        "hole_to_hole": "error",
+        "hole_to_hole": "ignore",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -156,7 +139,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.25,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
@@ -513,6 +496,13 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4
       }
     ],
     "meta": {
@@ -527,7 +517,16 @@
         "Power"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -537,7 +536,7 @@
       "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "pcb.step",
+      "step": "../../../pcb_silkscreen.step",
       "svg": "case/left",
       "vrml": ""
     },
