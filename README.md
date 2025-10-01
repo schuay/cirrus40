@@ -2,6 +2,8 @@
 
 The Cirrus40 is a 40% split mechanical keyboard, featuring an ortholinear layout and rotary encoders designed as first-class citizens.
 
+![cirrus40 pcb render](/img/pcb_render.png)
+
 ## Design Considerations
 
 - A **3x thumb cluster** where each key is equally usable and comfortable to reach.
