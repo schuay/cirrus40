@@ -1,0 +1,240 @@
+(footprint "RESISTOR_Reversible"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Resitance 3 pas")
+	(tags "R")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "B.SilkS")
+		(hide yes)
+		(uuid "1fa0162f-afda-498c-8805-3259a9ddce3c")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.12)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Value" "50V/100nF axial"
+		(at 0 -1.6 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bc6b54c9-1f7b-41a8-b81d-3c51958c69d4")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6359ca48-b6bd-4f53-8cf6-04d22c7fc0aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f5bb3602-6803-4243-b188-3d52a3c47eb1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.50114 -1.00076)
+		(end 1.50114 -1.00076)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a81a61c1-4759-425e-af1f-f87cfd10b80c")
+	)
+	(fp_line
+		(start -1.50114 1.00076)
+		(end -1.50114 -1.00076)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f0f7a4a2-70f9-4377-957c-7236c9977bc5")
+	)
+	(fp_line
+		(start 1.50114 -1.00076)
+		(end 1.50114 1.00076)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "586f0288-bb2b-46b5-b15d-685bda976b87")
+	)
+	(fp_line
+		(start 1.50114 1.00076)
+		(end -1.50114 1.00076)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f34c9e1c-1203-4777-96f2-4f716815acc4")
+	)
+	(fp_line
+		(start -1.5 -1)
+		(end -1.5 1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "5120b20b-89e9-4d9b-8e75-7ad86e9d5ec4")
+	)
+	(fp_line
+		(start -1.5 1)
+		(end 1.5 1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "c03b6562-6ebd-45ef-96ac-187097e4a7f3")
+	)
+	(fp_line
+		(start 1.5 -1)
+		(end -1.5 -1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "81595698-72c9-4dba-884c-e63c9e6caf8e")
+	)
+	(fp_line
+		(start 1.5 1)
+		(end 1.5 -1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "ee9a9917-cf7b-4255-a5e2-e13c796930e4")
+	)
+	(fp_poly
+		(pts
+			(xy -3.28 -1.06) (xy 3.27 -1.06) (xy 3.27 1.07) (xy -3.28 1.07)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8a54fbef-df4c-499c-a298-6146793279c1")
+	)
+	(fp_text user "CAP"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "73ccc26d-a18b-47cc-8957-9a6927165d6b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.152)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "CAP"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "86a54b69-99d7-4087-82fd-0f92592df113")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.152)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -2.54 0)
+		(size 1.5 1.5)
+		(drill 0.8128)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "693f3593-ce8a-4098-ac93-0c1ced2225b7")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.5 1.5)
+		(drill 0.8128)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "afc9d532-9bba-4c11-92f3-47f69add4ffe")
+	)
+	(embedded_fonts no)
+	(model "discret/resistor.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.3 0.3 0.3)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "Resistors_ThroughHole.3dshapes/Resistor_Horizontal_RM10mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.2 0.2 0.2)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

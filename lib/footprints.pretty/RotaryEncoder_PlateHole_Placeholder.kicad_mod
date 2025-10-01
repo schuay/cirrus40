@@ -1,0 +1,107 @@
+(footprint "RotaryEncoder_PlateHole_Placeholder"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
+	(tags "rotary encoder")
+	(property "Reference" "SW30"
+		(at -4.7 -7.2 180)
+		(layer "F.Fab")
+		(uuid "d73ee63f-9e61-465a-8917-a1834a454305")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Rotary_Encoder_Switch"
+		(at 0 7.9 180)
+		(layer "F.Fab")
+		(uuid "65ce5f7b-cb76-43a2-a64b-4b2e5a89f739")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3fda87d5-679c-4a59-913d-b30b1c178372")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcf1f016-bb6d-47d7-acd8-716ea93b4d78")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.9 6.1)
+		(end -5.9 -6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "0d0cdb25-e0f5-4b3d-b49b-0da33baf26a5")
+	)
+	(fp_line
+		(start 5.9 -6.1)
+		(end -5.9 -6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e4901429-c01d-4abc-b35c-cdc2660d04ff")
+	)
+	(fp_line
+		(start 5.9 6.1)
+		(end -5.9 6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "02184c02-d14d-4ae5-bf98-381a9faa08b6")
+	)
+	(fp_line
+		(start 5.9 6.1)
+		(end 5.9 -6.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "aa3197fe-68d4-4553-88f1-3d10ccd7d804")
+	)
+	(embedded_fonts no)
+	(model "${KISYS3DMOD}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
