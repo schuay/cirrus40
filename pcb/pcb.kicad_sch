@@ -8252,7 +8252,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF"
+		(property "Value" "100nF"
 			(at 151.13 133.3562 0)
 			(effects
 				(font
@@ -8460,7 +8460,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF"
+		(property "Value" "100nF"
 			(at 151.13 133.3562 0)
 			(effects
 				(font
@@ -9383,7 +9383,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF"
+		(property "Value" "100nF"
 			(at 201.93 133.3562 0)
 			(effects
 				(font
@@ -11916,7 +11916,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF"
+		(property "Value" "100nF"
 			(at 201.93 133.3562 0)
 			(effects
 				(font
