@@ -33,11 +33,25 @@ All files required for manufacture are located in the most recent release direct
 - **[PCB Gerber Files](releases/20251220/pcb-gerber.zip)**: For manufacturing the printed circuit boards.
 - **[3D Case/Stand Files](releases/20251220/case-steps.tar.xz)**: STEP files for printing the case and optional tenting stand.
 
+## Ordering guide
+
+TLDR: PCB and case manufacturing from JLCPCB, electronics components from LCSC, and the rest from AliExpress with Choice shipping.
+
+- [jlcpcb.com](jlcpcb.com):
+  - For the PCB: it's safe to stick with default values. 
+  - For the case: I used 9600 Resin (Spray Painting-Matte-Black) for the case and PA12-HP Nylon for the tenting stand with good results. Please let me know if you experiment with other materials.
+- [lcsc.com](lcsc.com): See [doc/bom.csv](doc/bom.csv) for more info. Note that the [USB-C connector I used](https://www.lcsc.com/product-detail/C963373.html) is currently out of stock and NOT included in [doc/bom.csv](doc/bom.csv).
+- [aliexpress.com](aliexpress.com): Great for switches, keycaps, encoder heads, the RP2040 ProMicro MCU, MCU pin headers, screws, spacers, nuts, etc. I've had good experiences with "Choice" shipping.
+
+Note: jlcpcb.com and lcsc.com offer combined shipping; this is not recommended, as it was more complex, more expensive, and slower when I tried it.
+
 ## Build guide
 
 A detailed, step-by-step build guide is not yet available. Contributions on this front are very welcome!
 
 However, the build process is straightforward for those with some experience in hand-soldering keyboards. The soldering difficulty is medium-to-easy; the surface-mount components are in a large (0805) package and are suitable for hand-soldering. The USB-C connector is also simpler than it looks: the wiring is such that all data pins can simply be bridged together (i.e. precise drag-soldering is not strictly needed).
+
+I usually do the USB-C connector and SMD components first, followed by diodes and hotswap sockets; and finally the MCU plus socket and encoders. All components (except the encoder) go on the bottom side of the PCB. Consult the kicad files if something is unclear. A multimeter is good to have around for verification and error search.
 
 ## Bill of Materials
 
